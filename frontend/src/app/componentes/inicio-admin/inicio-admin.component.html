@@ -1,0 +1,24 @@
+<p>
+    <mat-toolbar style="background-color: #333333; border-radius: 10px;">
+        <mat-icon style="color: aliceblue;">menu</mat-icon>
+
+        <span style="color: aliceblue;">FuBox</span>
+        <span class="example-spacer"></span>
+
+        <mat-icon style="color: red;" (click)="Logout()">logout</mat-icon>
+
+
+    </mat-toolbar>
+</p>
+
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Administración de Carpetas y Archivos">
+        <app-admin-carpetas-archivos></app-admin-carpetas-archivos>
+    </mat-tab>
+    <mat-tab label="Dar de alta">
+        <app-darde-alta></app-darde-alta>
+    </mat-tab>
+    <mat-tab label="Habilitar">
+        <app-habilitar></app-habilitar>
+    </mat-tab>
+</mat-tab-group>
